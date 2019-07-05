@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
 
+// $large: 'screen and (min-width: 1024px)';
+// $medium: 'screen and (min-width: 768px)';
+$small: 'screen and (max-width: 576px)';
+
 body {
     margin: 0;
     padding: 0;
@@ -11,15 +15,32 @@ body {
     background: url(./imgs/body.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
+    // @media screen and (max-width: 576px) {
+
+    //     .container {
+    //         background: rgb(184, 12, 12);
+    //         width: 50%;
+    //         padding: 3em 4em 7em 4em;
+    //         border-radius: 10px;
+    //         height: auto;
+    //     }
+    // }
 }
 
 .container {
     background: #fff;
-
     width: 100%;
     padding: 3em 4em 7em 4em;
     border-radius: 10px;
     height: 20%;
+
+    @media #{$small} {
+        width: 75%;
+        padding: 3em 4em 7em 4em;
+        border-radius: 10px;
+        height: auto;
+    }
 
     h1,
     img,
@@ -33,18 +54,30 @@ body {
         border-radius: 5px;
         background: linear-gradient(rgb(47, 146, 221), rgb(171, 206, 233));
         padding: 5px;
+
+        @media #{$small} {
+            font-size: 1em;
+        }
     }
 
     .price {
         float: right;
         font-size: 1.7em;
         color: #008BF5;
+
+        @media #{$small} {
+            font-size: 1em;
+        }
     }
 
     img {
         cursor: pointer;
         margin-left: 15px;
         width: 60px;
+
+        @media #{$small} {
+            width: 30px;
+        }
     }
 
     .info {
@@ -58,6 +91,11 @@ body {
             font-weight: bold;
             font-size: 1.20em;
             cursor: pointer;
+
+            @media #{$small} {
+                font-size: 0.80em;
+                margin: 0 0 8px 0;
+            }
         }
     }
 }
@@ -76,6 +114,12 @@ body {
         text-decoration: none;
         color: #008BF5;
         font-size: 1.3em;
+
+        @media #{$small} {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            font-size: 0.80em;
+        }
     }
 
     .subprice {
@@ -92,5 +136,5 @@ body {
     padding: 3em 4em 2em 4em;
     border-radius: 10px;
     height: 20%;
-    // display: none;
+    display: none;
 }

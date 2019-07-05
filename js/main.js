@@ -10,7 +10,7 @@ const input = document.getElementById('input');
 
 const addForm = (e) => {
 
-    e.preventDefault();
+    e.preventDefault()
 
     const titleWeight = sendWeight.value;
     const titleHeight = sendHeight.value;
