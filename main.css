@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  background: white;
+  background: #fff;
   width: 100%;
   padding: 3em 4em 7em 4em;
   border-radius: 10px;
@@ -36,8 +36,8 @@ body {
 .container h1 {
   font-size: 2em;
   border-radius: 5px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0b7935), to(#cfcf18));
-  background: linear-gradient(#0b7935, #cfcf18);
+  background: -webkit-gradient(linear, left top, left bottom, from(#2f92dd), to(#abcee9));
+  background: linear-gradient(#2f92dd, #abcee9);
   padding: 5px;
 }
 
@@ -60,6 +60,7 @@ body {
 .container .info button {
   color: #fff;
   background-color: #008BF5;
+  padding: 10px;
   border-radius: 15px;
   font-weight: bold;
   font-size: 1.20em;
@@ -90,5 +91,17 @@ body {
 .item .subprice {
   text-align: right;
   font-size: 1.2em;
+}
+
+#wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  background: #fff;
+  width: 100%;
+  padding: 3em 4em 2em 4em;
+  border-radius: 10px;
+  height: 20%;
 }
 /*# sourceMappingURL=main.css.map */

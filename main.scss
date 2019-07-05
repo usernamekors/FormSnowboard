@@ -14,7 +14,8 @@ body {
 }
 
 .container {
-    background: white;
+    background: #fff;
+
     width: 100%;
     padding: 3em 4em 7em 4em;
     border-radius: 10px;
@@ -30,7 +31,7 @@ body {
     h1 {
         font-size: 2em;
         border-radius: 5px;
-        background: linear-gradient(rgb(11, 121, 53), rgb(207, 207, 24));
+        background: linear-gradient(rgb(47, 146, 221), rgb(171, 206, 233));
         padding: 5px;
     }
 
@@ -52,6 +53,7 @@ body {
         button {
             color: #fff;
             background-color: #008BF5;
+            padding: 10px;
             border-radius: 15px;
             font-weight: bold;
             font-size: 1.20em;
@@ -76,8 +78,19 @@ body {
         font-size: 1.3em;
     }
 
-     .subprice {
+    .subprice {
         text-align: right;
         font-size: 1.2em;
     }
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #fff;
+    width: 100%;
+    padding: 3em 4em 2em 4em;
+    border-radius: 10px;
+    height: 20%;
+    // display: none;
 }
