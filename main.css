@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Barriecito|Rubik+Mono+One&display=swap");
 body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Barriecito', cursive;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -19,19 +19,20 @@ body {
 }
 
 .container {
-  background: #fff;
-  width: 100%;
+  background: #eeeeee;
+  width: 90%;
   padding: 3em 4em 7em 4em;
   border-radius: 10px;
   height: 20%;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 414px), screen and (max-width: 768px) {
   .container {
     width: 75%;
     padding: 3em 4em 7em 4em;
     border-radius: 10px;
     height: auto;
+    background: #b80b53;
   }
 }
 
@@ -45,12 +46,13 @@ body {
 .container h1 {
   font-size: 2em;
   border-radius: 5px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2f92dd), to(#abcee9));
-  background: linear-gradient(#2f92dd, #abcee9);
+  background: -webkit-gradient(linear, left top, left bottom, from(#56884b), to(#abcee9));
+  background: linear-gradient(#56884b, #abcee9);
   padding: 5px;
+  font-family: 'Rubik Mono One', sans-serif;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 414px), screen and (max-width: 768px) {
   .container h1 {
     font-size: 1em;
   }
@@ -62,7 +64,7 @@ body {
   color: #008BF5;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 414px), screen and (max-width: 768px) {
   .container .price {
     font-size: 1em;
   }
@@ -74,7 +76,7 @@ body {
   width: 60px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 414px), screen and (max-width: 768px) {
   .container img {
     width: 30px;
   }
@@ -94,7 +96,7 @@ body {
   cursor: pointer;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 414px), screen and (max-width: 768px) {
   .container .info button {
     font-size: 0.80em;
     margin: 0 0 8px 0;
@@ -122,7 +124,7 @@ body {
   font-size: 1.3em;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 414px), screen and (max-width: 768px) {
   .item a {
     display: -ms-grid;
     display: grid;
@@ -143,10 +145,11 @@ body {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   background: #fff;
-  width: 100%;
+  width: 80%;
   padding: 3em 4em 2em 4em;
   border-radius: 10px;
   height: 20%;
   display: none;
+  font-size: 30px;
 }
 /*# sourceMappingURL=main.css.map */

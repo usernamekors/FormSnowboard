@@ -1,45 +1,37 @@
-@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barriecito|Rubik+Mono+One&display=swap');
+
 
 // $large: 'screen and (min-width: 1024px)';
-// $medium: 'screen and (min-width: 768px)';
-$small: 'screen and (max-width: 576px)';
+$medium: 'screen and (max-width: 768px)';
+$small: 'screen and (max-width: 414px)';
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Barriecito', cursive;
     display: grid;
     justify-content: center;
     align-items: center;
     background: url(./imgs/body.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
-    // @media screen and (max-width: 576px) {
-
-    //     .container {
-    //         background: rgb(184, 12, 12);
-    //         width: 50%;
-    //         padding: 3em 4em 7em 4em;
-    //         border-radius: 10px;
-    //         height: auto;
-    //     }
-    // }
 }
 
 .container {
-    background: #fff;
-    width: 100%;
+    background: rgb(238, 238, 238);
+    width: 90%;
     padding: 3em 4em 7em 4em;
     border-radius: 10px;
     height: 20%;
 
-    @media #{$small} {
+    @media #{$small},
+    #{$medium} {
         width: 75%;
         padding: 3em 4em 7em 4em;
         border-radius: 10px;
         height: auto;
+        background: rgb(184, 11, 83);
     }
 
     h1,
@@ -52,10 +44,12 @@ body {
     h1 {
         font-size: 2em;
         border-radius: 5px;
-        background: linear-gradient(rgb(47, 146, 221), rgb(171, 206, 233));
+        background: linear-gradient(rgb(86, 136, 75), rgb(171, 206, 233));
         padding: 5px;
+        font-family: 'Rubik Mono One', sans-serif;
 
-        @media #{$small} {
+        @media #{$small},
+        #{$medium} {
             font-size: 1em;
         }
     }
@@ -65,7 +59,8 @@ body {
         font-size: 1.7em;
         color: #008BF5;
 
-        @media #{$small} {
+        @media #{$small},
+        #{$medium} {
             font-size: 1em;
         }
     }
@@ -75,7 +70,8 @@ body {
         margin-left: 15px;
         width: 60px;
 
-        @media #{$small} {
+        @media #{$small},
+        #{$medium} {
             width: 30px;
         }
     }
@@ -92,7 +88,8 @@ body {
             font-size: 1.20em;
             cursor: pointer;
 
-            @media #{$small} {
+            @media #{$small},
+            #{$medium} {
                 font-size: 0.80em;
                 margin: 0 0 8px 0;
             }
@@ -115,7 +112,8 @@ body {
         color: #008BF5;
         font-size: 1.3em;
 
-        @media #{$small} {
+        @media #{$small},
+        #{$medium} {
             display: grid;
             grid-template-columns: 60% 40%;
             font-size: 0.80em;
@@ -132,9 +130,10 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     background: #fff;
-    width: 100%;
+    width: 80%;
     padding: 3em 4em 2em 4em;
     border-radius: 10px;
     height: 20%;
     display: none;
+    font-size: 30px;
 }
