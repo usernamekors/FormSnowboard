@@ -27,6 +27,13 @@ body {
         margin: 0;
     }
 
+    h1 {
+        font-size: 2em;
+        border-radius: 5px;
+        background: linear-gradient(rgb(11, 121, 53), rgb(207, 207, 24));
+        padding: 5px;
+    }
+
     .price {
         float: right;
         font-size: 1.7em;
@@ -53,6 +60,10 @@ body {
     }
 }
 
+.itemOne {
+    padding: 8px;
+}
+
 .item {
     margin: 2em 0;
     display: grid;
@@ -65,7 +76,7 @@ body {
         font-size: 1.3em;
     }
 
-    .subprice {
+     .subprice {
         text-align: right;
         font-size: 1.2em;
     }

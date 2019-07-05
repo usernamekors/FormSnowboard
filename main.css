@@ -33,6 +33,14 @@ body {
   margin: 0;
 }
 
+.container h1 {
+  font-size: 2em;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0b7935), to(#cfcf18));
+  background: linear-gradient(#0b7935, #cfcf18);
+  padding: 5px;
+}
+
 .container .price {
   float: right;
   font-size: 1.7em;
@@ -56,6 +64,10 @@ body {
   font-weight: bold;
   font-size: 1.20em;
   cursor: pointer;
+}
+
+.itemOne {
+  padding: 8px;
 }
 
 .item {
