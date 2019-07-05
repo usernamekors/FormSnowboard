@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Serif Display', serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: url(./imgs/body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    padding: 3em 4em 7em 4em;
+    border-radius: 10px;
+    height: 20%;
+
+    h1,
+    img,
+    .price {
+        display: inline-block;
+        margin: 0;
+    }
+
+    .price {
+        float: right;
+        font-size: 1.7em;
+        color: #008BF5;
+    }
+
+    img {
+        cursor: pointer;
+        margin-left: 15px;
+        width: 60px;
+    }
+
+    .info {
+        display: none;
+
+        button {
+            color: #fff;
+            background-color: #008BF5;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 1.20em;
+            cursor: pointer;
+        }
+    }
+}
+
+.item {
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: 20% 40% 1fr;
+    justify-content: start;
+
+    a {
+        text-decoration: none;
+        color: #008BF5;
+        font-size: 1.3em;
+    }
+
+    .subprice {
+        text-align: right;
+        font-size: 1.2em;
+    }
+}
